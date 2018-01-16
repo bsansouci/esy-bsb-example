@@ -1,0 +1,39 @@
+{
+  "name": "esy-example",
+  "version": "0.0.1",
+  "description": "Example using bsb-native inside esy",
+  "esy": {
+    "build": [
+      ["bsb.exe"],
+      ["bsb.exe", "-backend", "native"]
+    ],
+    "install": [
+      "esy-installer"
+    ],
+    "buildsInSource": true
+  },
+  "dependencies": {
+    "bs-platform": "bsansouci/bsb-native#esy-support",
+    "@opam/ocamlfind": "*",
+    "@opam/alcotest": "*",
+    "@opam/reason": "^3.0.0"
+  },
+  "devDependencies": {
+    "ocaml": "~4.6.0000"
+  },
+  "peerDependencies": {
+    "ocaml": "~4.6.0000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bsansouci/esy-bsb-example.git"
+  },
+  "author": "bsansouci & schmavery",
+  "opam": {
+    "type": "binary",
+    "binaries": {
+      "lib/bs/bytecode/index.byte": "example.byte",
+      "lib/bs/native/index.native": "example.native"
+    }
+  }
+}

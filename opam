@@ -1,0 +1,12 @@
+opam-version: "1.2"
+name: "esy-example"
+version: "0.0.1"
+dev-repo: "git+https://github.com/bsansouci/esy-bsb-example.git"
+homepage: "git+https://github.com/bsansouci/esy-bsb-example"
+bug-reports: "git+https://github.com/bsansouci/esy-bsb-example/issues"
+authors: [ "bsansouci & schmavery" ]
+maintainer: "bsansouci & schmavery"
+build: [
+  [ "bsb" "-build-library" "-make-world" "-backend" "bytecode" "&&" "-build-library" "-make-world" "-backend" "native"  ]
+]
+available: [ ocaml-version = "4.02.3" ]

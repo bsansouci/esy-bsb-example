@@ -1,0 +1,14 @@
+{
+  "name": "esy-example",
+  "sources": "src",
+  "bsc-flags": [],
+  "ocamlfind-dependencies": ["alcotest"],
+  "entries": [{
+    "backend": "bytecode",
+    "main-module": "Index"
+  },{
+    "backend": "native",
+    "main-module": "Index"
+  }],
+  "refmt": 3
+}

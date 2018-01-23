@@ -1,11 +1,10 @@
 {
-  "name": "esy-example",
+  "name": "EsyExample",
   "version": "0.0.1",
   "description": "Example using bsb-native inside esy",
   "esy": {
     "build": [
-      ["bsb.exe"],
-      ["bsb.exe", "-backend", "native"]
+      ["bsb.exe"]
     ],
     "install": [
       "esy-installer"
@@ -14,6 +13,7 @@
   },
   "dependencies": {
     "bs-platform": "bsansouci/bsb-native#esy-support",
+    "EsyExampleLibrary": "bsansouci/esy-bsb-example-library",
     "@opam/ocamlfind": "*",
     "@opam/alcotest": "*",
     "@opam/reason": "^3.0.0"

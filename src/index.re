@@ -1,7 +1,7 @@
 /**
  * Simple example project that uses the default example on the alcotest repo
- * https://github.com/mirage/alcotest#examples 
- * 
+ * https://github.com/mirage/alcotest#examples
+ *
  */
 
 /* A module with functions to test */
@@ -20,3 +20,4 @@ let test_set = [("Capitalize", `Quick, capit), ("Add entries", `Slow, plus)];
 /* Run it */
 let () = Alcotest.run("My first test", [("test_set", test_set)]);
 
+print_endline("Data from dep: " ++ EsyExampleLibrary.Index.dumbData);

@@ -12,7 +12,7 @@ You'll need to install esy for this: `npm install -g esy`
 `esy build`
 
 ## Run
-`esy x index.byte`
+`esy x example.byte`
 
 
 ## Some Details
